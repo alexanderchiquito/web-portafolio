@@ -1,0 +1,99 @@
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+*{margin:0;padding:0;border: 0 none; position: relative;}
+:root { 
+    box-sizing: border-box;
+}
+
+body {
+    background:linear-gradient(210deg, #253063 0, #040c2c 50%, #000000 100%);
+    width: 100vw;
+    height: 120vh;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    font-family: nunito, sans-serif;
+    font-weight: 300;
+    color: #fff;
+}
+  
+section {
+    background: rgba(0,0,0,.5);
+    display: grid;
+    margin-left: 60px;
+    grid-template-areas: 'soloyo';
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    justify-items: center;
+    border: 1px solid #000;
+    max-width: 90vw;
+}
+article {
+    grid-area: soloyo;
+    align-self: stretch;
+    display: block;
+    padding: 4rem 0;
+    font-size: 1.35rem;
+}
+ul {
+    margin-left: 2rem;
+}
+section img {
+    grid-area: soloyo;  
+    align-self: center;
+    margin-right: auto;
+    width: 150px;
+    height: 200px;
+    z-index: -1;
+    filter: drop-shadow(0 0 1px #000);
+}
+
+section header {
+    align-self: flex-start;
+    margin-top: 1rem;
+}
+footer {
+    align-self: flex-end;
+    margin-bottom: 1rem;
+}
+section header,
+footer {
+    background: #ffa600;
+    grid-area: soloyo;
+    width: 100%;
+    padding: 0 1rem;
+    z-index: 1;
+    font-size: 1.5rem;
+    text-align: center;
+    font-variant: small-caps;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+header:hover,
+footer:hover {
+    overflow: initial;
+    text-overflow: initial;
+    white-space: initial;
+}
+
+.imgmap{
+    width: 5%;
+    height: 5%;
+}
+.imgschool{
+    width: 5%;
+    height: 5%;
+}
+
+.imggmail{
+    width: 5%;
+    height: 5%;
+}
+.imgW{
+    margin-top: 5px;
+    width: 3%;
+    height: 3%;
+}
